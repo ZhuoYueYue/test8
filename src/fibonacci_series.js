@@ -1,0 +1,22 @@
+'use strict';
+
+function fibonacci_series(input) {
+	
+		var array=[0,1];
+		var i;
+		if (input<1){
+			return -1;
+		}
+
+		if (input>=1){
+			for (i=2;i<=input;i++)
+			{
+				array[i]=array[i-1]+array[i-2];
+			}
+			return(array);
+		}
+
+
+}
+
+module.exports = fibonacci_series;
